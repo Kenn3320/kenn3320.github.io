@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nexora Labs — Automation & AI Systems</title>
+<meta name="description" content="Nexora Labs builds lightweight automation and AI-ready systems for small businesses — ordering systems, WhatsApp workflows, real-time dashboards.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          sans: ['Plus Jakarta Sans', 'sans-serif'],
+          mono: ['JetBrains Mono', 'monospace'],
+        },
+      }
+    }
+  }
+</script>
+<style>
+  :root{
+    --base:#0B0F19;
+    --surface:#12161F;
+    --border:rgba(255,255,255,0.08);
+    --accent:#F2B84C;
+    --accent-soft:rgba(242,184,76,0.12);
+  }
+  html{ scroll-behavior:smooth; }
+  body{ background:var(--base); }
+  .card{ background:var(--surface); border:1px solid var(--border); }
+  .tag{ background:rgba(255,255,255,0.04); border:1px solid var(--border); color:#94A3B8; }
+  :focus-visible{ outline:2px solid var(--accent); outline-offset:2px; }
+</style>
+</head>
+<body class="font-sans text-slate-100 min-h-screen">
+
+  <!-- ============ NAV ============ -->
+  <header class="border-b border-white/5">
+    <div class="max-w-5xl mx-auto px-6 py-5 flex items-center justify-between">
+      <div class="flex items-center gap-2.5">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+          <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="#F2B84C" stroke-width="1.6" stroke-linejoin="round"/>
+          <path d="M2 12L12 17L22 12" stroke="#F2B84C" stroke-width="1.6" stroke-linejoin="round" opacity="0.55"/>
+        </svg>
+        <span class="font-bold tracking-tight">Nexora Labs</span>
+      </div>
+      <a href="#contact" class="text-sm font-medium px-4 py-2 rounded-full transition" style="background:var(--accent); color:#1A1300">Get in touch</a>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="max-w-5xl mx-auto px-6 pt-20 pb-16">
+    <p class="text-xs font-mono mb-4" style="color:var(--accent)">// automation & ai systems</p>
+    <h1 class="text-3xl sm:text-5xl font-bold tracking-tight leading-tight max-w-3xl">
+      Turning manual business operations into real-time, automated systems.
+    </h1>
+    <p class="text-slate-400 mt-5 max-w-xl leading-relaxed">
+      I'm Kenn, founder of Nexora Labs. I design and build lightweight automation — ordering systems, WhatsApp workflows, real-time dashboards, and AI-ready backends — for small businesses that need results without enterprise budgets.
+    </p>
+    <div class="flex flex-wrap gap-3 mt-8">
+      <a href="#work" class="text-sm font-semibold px-5 py-2.5 rounded-full transition" style="background:var(--accent); color:#1A1300">View my work</a>
+      <a href="#contact" class="text-sm font-semibold px-5 py-2.5 rounded-full border border-white/15 text-slate-200 hover:border-white/30 transition">Get in touch</a>
+    </div>
+  </section>
+
+  <!-- ============ FEATURED PROJECT ============ -->
+  <section id="work" class="max-w-5xl mx-auto px-6 py-16">
+    <p class="text-xs font-mono uppercase tracking-wide mb-2" style="color:var(--accent)">Featured project</p>
+    <h2 class="text-2xl font-bold mb-8">Real-time operations dashboard for a restaurant</h2>
+
+    <div class="card rounded-2xl p-6 sm:p-8 mb-6">
+      <div class="flex flex-wrap gap-2 mb-6">
+        <span class="tag text-xs font-mono px-2.5 py-1 rounded-full">Make.com</span>
+        <span class="tag text-xs font-mono px-2.5 py-1 rounded-full">Google Apps Script</span>
+        <span class="tag text-xs font-mono px-2.5 py-1 rounded-full">Google Sheets</span>
+        <span class="tag text-xs font-mono px-2.5 py-1 rounded-full">WhatsApp API</span>
+        <span class="tag text-xs font-mono px-2.5 py-1 rounded-full">Claude API</span>
+      </div>
+
+      <!-- Screenshot placeholder — replace with a real screenshot of the live dashboard -->
+      <div class="rounded-xl border border-dashed border-white/15 aspect-video flex items-center justify-center mb-6" style="background:rgba(255,255,255,0.02)">
+        <p class="text-xs text-slate-500 font-mono text-center px-4">dashboard-preview.png<br>— replace this box with a screenshot of your live dashboard —</p>
+      </div>
+
+      <p class="text-slate-300 leading-relaxed mb-4">
+        Warung Pak Budi, a local restaurant, ran entirely on manual processes — handwritten order notes, no visibility into sales until closing time, no way to tell which menu items or hours actually drove revenue. Nexora Labs built an end-to-end digital ordering and operations system to fix that.
+      </p>
+
+      <div class="grid sm:grid-cols-2 gap-4 mb-6">
+        <div>
+          <h3 class="text-sm font-semibold mb-1.5">QR-code table ordering</h3>
+          <p class="text-sm text-slate-400">Customers scan a code and order directly from their phone — no app, no waiting on staff.</p>
+        </div>
+        <div>
+          <h3 class="text-sm font-semibold mb-1.5">Automated WhatsApp notifications</h3>
+          <p class="text-sm text-slate-400">Every order triggers an instant confirmation to the owner via the Fonnte WhatsApp API.</p>
+        </div>
+        <div>
+          <h3 class="text-sm font-semibold mb-1.5">Real-time owner dashboard</h3>
+          <p class="text-sm text-slate-400">Live revenue, order volume, best-sellers, table activity, and peak-hour analysis — updating automatically.</p>
+        </div>
+        <div>
+          <h3 class="text-sm font-semibold mb-1.5">AI-ready architecture</h3>
+          <p class="text-sm text-slate-400">Backend structured to plug in stock forecasting, marketing copy generation, and a financial Q&amp;A assistant.</p>
+        </div>
+      </div>
+
+      <p class="text-slate-400 text-sm leading-relaxed mb-6">
+        <span class="font-semibold text-slate-300">Result:</span> the owner moved from a same-day paper tally to continuous, real-time visibility into the business, with zero manual data entry anywhere in the pipeline.
+      </p>
+
+      <!-- TODO: confirm this points at your actual live dashboard URL -->
+      <a href="https://kenn3320.github.io/nexora-fnb/neo-fnb-dashboard-minimal.html" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-sm font-semibold" style="color:var(--accent)">
+        View live dashboard
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============ OTHER PROJECTS ============ -->
+  <section class="max-w-5xl mx-auto px-6 py-16">
+    <p class="text-xs font-mono uppercase tracking-wide mb-2" style="color:var(--accent)">More work</p>
+    <h2 class="text-2xl font-bold mb-8">Other projects</h2>
+
+    <div class="grid sm:grid-cols-2 gap-5">
+      <div class="card rounded-2xl p-6">
+        <h3 class="font-semibold mb-2">TikTok content automation pipeline</h3>
+        <p class="text-sm text-slate-400 leading-relaxed mb-4">Fully automated daily content pipeline — AI-generated quotes, custom image rendering, and scheduled publishing, running hands-off via GitHub Actions.</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="tag text-xs font-mono px-2 py-0.5 rounded-full">GitHub Actions</span>
+          <span class="tag text-xs font-mono px-2 py-0.5 rounded-full">Groq API</span>
+          <span class="tag text-xs font-mono px-2 py-0.5 rounded-full">Python</span>
+          <span class="tag text-xs font-mono px-2 py-0.5 rounded-full">Make.com</span>
+        </div>
+      </div>
+
+      <div class="card rounded-2xl p-6">
+        <h3 class="font-semibold mb-2">AI-powered market alert bot</h3>
+        <p class="text-sm text-slate-400 leading-relaxed mb-4">Real-time gold price monitoring with AI-generated trend analysis, delivering instant alerts straight to Telegram.</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="tag text-xs font-mono px-2 py-0.5 rounded-full">Make.com</span>
+          <span class="tag text-xs font-mono px-2 py-0.5 rounded-full">Groq (Llama 3.3)</span>
+          <span class="tag text-xs font-mono px-2 py-0.5 rounded-full">Telegram API</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STACK ============ -->
+  <section class="max-w-5xl mx-auto px-6 py-16">
+    <p class="text-xs font-mono uppercase tracking-wide mb-6" style="color:var(--accent)">Tools I work with</p>
+    <div class="flex flex-wrap gap-2.5">
+      <span class="tag text-sm px-3.5 py-1.5 rounded-full">Make.com</span>
+      <span class="tag text-sm px-3.5 py-1.5 rounded-full">Google Apps Script</span>
+      <span class="tag text-sm px-3.5 py-1.5 rounded-full">Claude API</span>
+      <span class="tag text-sm px-3.5 py-1.5 rounded-full">Groq API</span>
+      <span class="tag text-sm px-3.5 py-1.5 rounded-full">WhatsApp Business API</span>
+      <span class="tag text-sm px-3.5 py-1.5 rounded-full">Google Sheets</span>
+      <span class="tag text-sm px-3.5 py-1.5 rounded-full">JavaScript</span>
+      <span class="tag text-sm px-3.5 py-1.5 rounded-full">Python</span>
+      <span class="tag text-sm px-3.5 py-1.5 rounded-full">GitHub Actions</span>
+      <span class="tag text-sm px-3.5 py-1.5 rounded-full">Tailwind CSS</span>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="max-w-5xl mx-auto px-6 py-20">
+    <div class="card rounded-2xl p-8 sm:p-12 text-center">
+      <h2 class="text-2xl sm:text-3xl font-bold mb-3">Let's build something.</h2>
+      <p class="text-slate-400 max-w-md mx-auto mb-7">Have a process that's eating your time? Let's talk about whether automation is the right fix — I'll tell you honestly before we start.</p>
+      <div class="flex flex-wrap gap-3 justify-center">
+        <!-- TODO: replace with your real email -->
+        <a href="mailto:hello@nexoralabs.com" class="text-sm font-semibold px-5 py-2.5 rounded-full transition" style="background:var(--accent); color:#1A1300">Email me</a>
+        <!-- TODO: replace with your real WhatsApp number, format: https://wa.me/62xxxxxxxxxxx -->
+        <a href="https://wa.me/62000000000" class="text-sm font-semibold px-5 py-2.5 rounded-full border border-white/15 text-slate-200 hover:border-white/30 transition">WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-center text-xs text-slate-500 pb-10">
+    © 2026 Nexora Labs · Automation & AI systems for small businesses
+  </footer>
+
+</body>
+</html>
